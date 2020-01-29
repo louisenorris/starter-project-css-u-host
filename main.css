@@ -93,6 +93,10 @@ body {
     color: #0e4f1f
 }
 
+.button:focus {
+    outline: none;
+}
+
 .main-header {
     background-color: #2ddf5c;
     padding: 8px 16px;
