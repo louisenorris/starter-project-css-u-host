@@ -14,12 +14,11 @@ for (let i = 0; i < selectPlanButtons.length; i++ ) {
     })
 }
 
-backdrop.addEventListener('click', function() {
-    modal.style.display = 'none';
-    backdrop.style.display = 'none';
-})
+backdrop.addEventListener('click', closeModal)
 
-modalButton.addEventListener('click', function() {
+modalButton.addEventListener('click', closeModal)
+
+function closeModal() {
     modal.style.display = 'none';
     backdrop.style.display = 'none';
-})
+}
