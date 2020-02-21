@@ -5,7 +5,7 @@ const modalButton = document.querySelector('.modal__action--negative');
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
-console.dir(modalButton)
+// console.dir(modalButton)
 
 // backdrop.style.display = 'block'
 
@@ -24,12 +24,16 @@ backdrop.addEventListener('click', function() {
     closeModal()
 })
 
-modalButton.addEventListener('click', closeModal)
+if (modalButton) {
+    modalButton.addEventListener('click', closeModal)
+}
 
 function closeModal() {
     // modal.style.display = 'none';
     // backdrop.style.display = 'none';
-    modal.classList.remove('open');
+    if (modal) {
+        modal.classList.remove('open');
+    }
     backdrop.classList.remove('open');
 }
 
