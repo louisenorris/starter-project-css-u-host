@@ -1,6 +1,7 @@
 @font-face {
     font-family: "AnonymousPro";
     src: url("anonymousPro-Regular.ttf") format("truetype");
+    /* font-display: optional; */
 }
 
 @font-face {
@@ -64,11 +65,15 @@ main {
     font-size: 1.2rem;
     color: #0e4f1f;
     background-color: white;
-    font-family: "AnonymousPro", sans-serif;
-    font-weight: 700;
+    /* font-family: "AnonymousPro", sans-serif; */
+    /* font-weight: 700; */
+    /* default system fonts: eg menu, status-bar */
+    /* font: status-bar; */
+    /* font: 700 1.2rem "AnonymousPro", sans-serif */
+    /* font-style font-variant font-weight font-size/line-height font-family(always last property) */
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
