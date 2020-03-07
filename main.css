@@ -85,6 +85,7 @@
     .plan__list {
     width: 100%;
     text-align: center;
+    display: flex;
 }
     .plan {
         display: inline-block;
@@ -92,6 +93,7 @@
         vertical-align: middle;
         min-width: 13rem;
         max-width: 25rem;
+        /* display: flex; */
     }
 
     .plan--highlighted {
