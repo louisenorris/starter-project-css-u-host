@@ -75,13 +75,7 @@ main {
     }
 
     .testimonial__info {
-      display: inline-block;
-      vertical-align: middle;
       width: 30%;
     }
-    
-    /* .testimonial__list {
-      width: 80%;
-      margin: auto;
-    } */
+  
   }
