@@ -130,17 +130,6 @@ main {
     border: none
 }
 
-@media (min-width: 40rem) {
-    .toggle-button {
-        display: none
-    }
-
-    .main-nav {
-       display: flex;
-    }
-
-}
-
 .main-footer {
     background-color: black;
     padding: 2rem;
@@ -171,19 +160,6 @@ main {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
-}
-
-@media (min-width: 40rem) {
-
-    .main-footer__link {
-        margin: 0 1rem;
-    }
-
-    .main-footer__links {
-        flex-direction: row;
-        justify-content: center;
-    }
-
 }
 
 .button {
@@ -246,5 +222,31 @@ main {
   }
 
   .open {
-      display: block !important;
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
+
+  @media (min-width: 40rem) {
+    .toggle-button {
+        display: none
+    }
+
+    .main-nav {
+       display: flex;
+    }
+
+}
+
+@media (min-width: 40rem) {
+
+    .main-footer__link {
+        margin: 0 1rem;
+    }
+
+    .main-footer__links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
