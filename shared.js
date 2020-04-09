@@ -4,6 +4,7 @@ const modal = document.querySelector('.modal');
 const modalButton = document.querySelector('.modal__action--negative');
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
+const ctaButton = document.querySelector('.main-nav__item--cta')
 
 // console.dir(modalButton)
 
@@ -43,4 +44,16 @@ toggleButton.addEventListener('click', function() {
     setTimeout(function() {
         backdrop.classList.add('open');
     }, 10);
+})
+
+ctaButton.addEventListener('animationstart', function() {
+    console.log('Animation started', event)
+})
+
+ctaButton.addEventListener('animationend', function() {
+    console.log('Animation end', event)
+})
+
+ctaButton.addEventListener('animationiteration', function() {
+    console.log('Animation iteration', event)
 })
